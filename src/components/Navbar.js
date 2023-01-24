@@ -13,3 +13,23 @@ function Navbar() {
 }
 
 export default Navbar
+
+//with the react-scroll package you can use {Link} from 'react-scroll'
+//Then you can use the Link component in your Navbar component and set 
+//the to prop to the ID of the element you want to scroll to.
+
+{/* <Link
+  className="navbar-item"
+  to="about-section"
+  spy={true}
+  smooth={true}
+  offset={-70}
+  duration={500}
+>
+  About Me
+</Link> */}
+// You also need to add an id to the element you want to scroll to.
+
+// <section id="about-section">
+//    // content
+// </section>

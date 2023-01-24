@@ -46,3 +46,28 @@
 .navbar {
   animation: navbarAnimation 0.5s ease-in-out;
 }
+
+ .app {
+  display: grid;
+  grid-template-areas: 
+    "navbar navbar navbar"
+    "socials main side"
+    "socials main side";
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.socials {
+  grid-area: socials;
+  background-color: black;
+}
+
+.main {
+  grid-area: main;
+}
+
+.side {
+  grid-area: side;
+}

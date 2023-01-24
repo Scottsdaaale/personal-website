@@ -1,25 +1,21 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import AboutMe from "./pages/AboutMe";
-import ProjectShowcase from "./pages/ProjectShowcase";
-import Resume from "./pages/Resume";
+import Socials from "./components/Socials";
+import Main from "./components/Main";
+import Side from "./components/Side";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+// import {Navbar, Side, Socials, Home, AboutMe, ProjectShowcase, Resume} from './components'
 
 function App() {
   return (
-    <Router>
-        <Navbar/>
-        <Routes>
-          <Route path="/" exact component={Home}/>
-          <Route path="/about" component={AboutMe}/>
-          <Route path="/projects" component={ProjectShowcase}/>
-          <Route path="/resume" component={Resume}/>
-        </Routes>
-        <Footer/>
-    </Router>
+    <div className="app">
+      <Router>
+        <Navbar />
+        <Socials />
+        <Main />
+        <Side />
+      </Router>
+    </div>
   );
 }
 
