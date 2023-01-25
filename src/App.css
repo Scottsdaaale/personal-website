@@ -15,7 +15,7 @@
   position: relative;
   color: var(--second-color);
   text-decoration: none;
-  padding:  10px;
+  padding: 10px;
   transition: all 0.2s ease-in-out;
 }
 
@@ -36,10 +36,10 @@
 
 @keyframes navbarAnimation {
   0% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   100% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -47,12 +47,15 @@
   animation: navbarAnimation 0.5s ease-in-out;
 }
 
- .app {
-  display: grid;
-  grid-template-areas: 
+.app {
+  /* display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
     "navbar navbar navbar"
-    "socials main side"
-    "socials main side";
+    "aboutme"
+    "projects"
+    "resume"
+    "socials main side"; */
 }
 
 .navbar {
@@ -60,14 +63,69 @@
 }
 
 .socials {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
   grid-area: socials;
   background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 30%;
+  width: 8%;
+
+  /* width: 100% */
 }
 
 .main {
   grid-area: main;
+  text-align: center;
+  border: 2px solid red;
+  margin: 10%;
 }
 
 .side {
+  display: grid;
   grid-area: side;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 30%;
+  width: 8%;
+  /* word-wrap: break-word; */
 }
+.horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: rotate(90deg);
+}
+
+.about-me, .project-showcase, .resume, .intro{
+  height: 500px;
+  margin: 100px;
+  margin-top: 10%;
+  margin-bottom: 50%;
+}
+
+.intro{
+  border: 2px solid yellow; ;
+
+}
+
+.about-me{
+  border: 2px solid black;
+}
+
+.project-showcase {
+  border: 2px solid green;
+}
+
+.resume {
+  border: 2px solid blue;
+}
+

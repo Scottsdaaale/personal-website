@@ -2,7 +2,9 @@ import React from 'react'
 
 function ProjectShowcase() {
   return (
-    <div>ProjectShowcase</div>
+    <div>
+      projects
+    </div>
   )
 }
 

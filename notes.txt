@@ -2,3 +2,19 @@ Danial Manns website https://dmann.netlify.app/
 
 
 
+
+NAVBAR
+________________________________________________________________________________________________
+How to Hide a Navigation Bar When Scrolling Down - HTML, CSS & JavaScript Web Design Tutorial
+https://www.youtube.com/watch?v=Q_XZk5Vnujw
+
+How To Make Nav Bar Styles In React Change On Scroll
+https://www.youtube.com/watch?v=UvWMlNZuQTc
+
+React Navbar fade out when scroll down
+https://www.youtube.com/watch?v=qjJBKC3I9gE
+
+
+
+
+
