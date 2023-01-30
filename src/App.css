@@ -1,7 +1,28 @@
-:root {
-  --main-color: #536855;
-  --second-color: #8aac90;
+body{
+  /* background: url("../public/background.jpg"); */
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
 }
+
+:root {
+  --main-color: #fcee21;
+  --second-color: #000000;
+  --background-image: url("../public/background.jpg");
+}
+
+ html { 
+  /* background: var(--background-image) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: grayscale(100%); */
+} 
+
 
 .navbar {
   display: flex;
@@ -44,7 +65,7 @@
 }
 
 .navbar {
-  animation: navbarAnimation 0.5s ease-in-out;
+  /* animation: navbarAnimation 0.5s ease-in-out; */
 }
 
 .app {
@@ -58,74 +79,148 @@
     "socials main side"; */
 }
 
-.navbar {
+/* .navbar {
   grid-area: navbar;
-}
-
-.socials {
-  border: 2px solid red;
-  display: flex;
-  flex-direction: column;
-  grid-area: socials;
-  background-color: black;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 30%;
-  width: 8%;
-
-  /* width: 100% */
-}
+} */
 
 .main {
-  grid-area: main;
   text-align: center;
-  border: 2px solid red;
-  margin: 10%;
+  border: 2px solid #fcee21;
+  margin: 5%;
+}
+
+.socials-container {
+  position: fixed;
+  /* left: 0; This will center the socials container */
+  bottom: 0; /* This will place the container at the bottom of the screen */
+  /* transform: translate(-50%, 0); This will adjust the position of the socials container to the left of the center */
+  justify-content: center;
+  height: 250px;
+  width: 5%;
+
+}
+
+
+.socials {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  /* position: fixed; */
+  bottom: 0;
+  margin: 0;
+  left: 0;
+  padding: 0;
+}
+
+.socials li {
+  display: flex;
+  align-items: center;
+  margin: 0px 0;
+}
+
+.socials a {
+  font-size: 25px;
+  color: #fcee21;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.socials-hr {
+  border: 1px solid #fcee21;
+  height: 80px;
+  width: 0px;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+}
+
+.side-container {
+  position: fixed;
+  right: 0;
+  bottom: 0; /* This will place the container at the bottom of the screen */
+  /* transform: translate(-50%, 0); This will adjust the position of the socials container to the left of the center */
+  justify-content: center;
+  height: 250px;
+  width: 5%;
+
 }
 
 .side {
-  display: grid;
-  grid-area: side;
+  display: flex;
+  flex-direction: column; 
   align-items: center;
-  justify-content: center;
-  background-color: red;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
-  right: 0;
-  height: 30%;
-  width: 8%;
-  /* word-wrap: break-word; */
+  margin: 0;
+  /* right: 0; */
+  padding: 0;
+  
+  
 }
-.horizontal {
+
+.side li {
+  display: flex;
+  
+  font-size: 10px;
+  list-style-type: none;
+  
+}
+.side p {
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  color: #fcee21;
+  font-size: 11px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.side-hr {
+  display: flex;
+  border: 1px solid #fcee21;
+  height: 80px;
+  width: 0px;
+  position: absolute;
+  right: 50%;
+  bottom: 0px;
+}
+
+/* .horizontal {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   transform: rotate(90deg);
-}
+} */
 
 .about-me, .project-showcase, .resume, .intro{
   height: 500px;
   margin: 100px;
   margin-top: 10%;
   margin-bottom: 50%;
+  border: 2px solid yellow; ;
 }
 
 .intro{
-  border: 2px solid yellow; ;
+  
 
+}
+
+.intro-container p{
+  color: #fcee21;
+}
+.intro-container h1{
+  color: #fcee21;
 }
 
 .about-me{
-  border: 2px solid black;
+  
 }
 
 .project-showcase {
-  border: 2px solid green;
+ 
 }
 
 .resume {
-  border: 2px solid blue;
+  
 }
 

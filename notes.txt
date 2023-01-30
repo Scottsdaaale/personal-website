@@ -3,6 +3,12 @@ Danial Manns website https://dmann.netlify.app/
 
 
 
+*
+________________________________________________________________________________________________
+Text types itself out
+https://css-tricks.com/snippets/css/typewriter-effect/
+
+
 NAVBAR
 ________________________________________________________________________________________________
 How to Hide a Navigation Bar When Scrolling Down - HTML, CSS & JavaScript Web Design Tutorial
@@ -18,3 +24,6 @@ https://www.youtube.com/watch?v=qjJBKC3I9gE
 
 
 
+
+
+_
