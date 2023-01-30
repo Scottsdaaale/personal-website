@@ -5,7 +5,9 @@ function Side() {
     <div className="side-container">
       <ul className="side">
         <li>
-          <p>ScottpetersonSE@gmail.com</p>
+          <a href="mailto:ScottpetersonSE@gmail.com">
+            <p>ScottpetersonSE@gmail.com</p>
+          </a>
         </li>
         <li>
           <hr className="side-hr" />
