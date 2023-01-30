@@ -24,11 +24,10 @@ function Socials() {
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://www.instagram.com/scottsdaaale/" target="_blank">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </li>
-
         <li>
           <hr className="socials-hr" />
         </li>

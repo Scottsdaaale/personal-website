@@ -6,18 +6,18 @@ import Intro from "./sections/Intro";
 function Main() {
   return (
     <div className="main">
-      <div className="intro">
+      <section className="intro">
         <Intro/>
-      </div>
-      <div className="about-me">
+      </section>
+      <section className="about-me">
         <AboutMe />
-      </div>
-      <div className="project-showcase">
+      </section>
+      <section className="project-showcase">
         <ProjectShowcase />
-      </div>
-      <div className="resume">
+      </section>
+      <section className="resume">
         <Resume />
-      </div>
+      </section>
     </div>
   );
 }
