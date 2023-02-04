@@ -7,7 +7,7 @@ function Navbar() {
 
   useEffect(() => {
     function onScroll(){
-      if (window.scrollY >= 20) {
+      if (window.scrollY >= 0.1) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -47,7 +47,7 @@ function Navbar() {
           duration={500}
           className="navbar-item"
         >
-          About Me
+          About
         </Link>
         <Link
           activeClass="active"
@@ -62,7 +62,7 @@ function Navbar() {
         </Link>
         <Link
           activeClass="active"
-          to="projects"
+          to="resume"
           spy={true}
           smooth={true}
           offset={-70}
