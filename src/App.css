@@ -243,7 +243,7 @@ html {
   /* margin: 300px; */
   margin-top: 3%;
   margin-bottom: 3%;
-  border: 2px solid var(--main);
+  /* border: 2px solid var(--main); */
 }
 
 .intro {
@@ -251,11 +251,31 @@ html {
   flex-direction: row;
 }
 
-.intro-container p {
-  color: var(--light-grey);
+.big-heading{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 70%;
 }
-.intro-container h1 {
-  color: var(--grey);
+
+.intro-container h1, p {
+  color: var(--white);
+  font-size: 10px;
+}
+.intro-container p {
+  width: 60%;
+}
+
+.heading-1{
+  color: var(--main);
+  font-size: 40px;
+  margin: 0;
+}
+
+.heading-2{
+  color: var(--dark-yellow);
+  font-size: 40px;
+  margin: 0;
 }
 
 .about-me {

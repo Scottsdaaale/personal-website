@@ -27,17 +27,17 @@ function Navbar() {
       </div>
 
       <nav className="navbar">
-        <Link
+        {/* <Link
           activeClass="active"
           to="home"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
-          className="navbar-item"
+          className={`navbar-item ${scrolled ? "scrolled" : ""}`}
         >
           Home
-        </Link>
+        </Link> */}
         <Link
           activeClass="active"
           to="about"
@@ -45,7 +45,7 @@ function Navbar() {
           smooth={true}
           offset={-70}
           duration={500}
-          className="navbar-item"
+          className={`navbar-item ${scrolled ? "scrolled" : ""}`}
         >
           About
         </Link>
@@ -56,7 +56,7 @@ function Navbar() {
           smooth={true}
           offset={-70}
           duration={500}
-          className="navbar-item"
+          className={`navbar-item ${scrolled ? "scrolled" : ""}`}
         >
           Projects
         </Link>
@@ -67,7 +67,7 @@ function Navbar() {
           smooth={true}
           offset={-70}
           duration={500}
-          className="navbar-item"
+          className={`navbar-item ${scrolled ? "scrolled" : ""}`}
         >
           Resume
         </Link>
