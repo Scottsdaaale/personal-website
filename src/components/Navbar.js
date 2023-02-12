@@ -26,17 +26,6 @@ function Navbar() {
       </div>
       <div className="nav-links-container">
         <nav className="nav-links">
-          {/* <Link
-          activeClass="active"
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          className={`navbar-item ${scrolled ? "scrolled" : ""}`}
-        >
-          Home
-        </Link> */}
           <Link
             activeClass="active"
             to="about"
@@ -53,7 +42,7 @@ function Navbar() {
             to="projects"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-100}
             duration={500}
             className={`navbar-item ${scrolled ? "scrolled" : ""}`}
           >
@@ -64,7 +53,7 @@ function Navbar() {
             to="resume"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-100}
             duration={500}
             className={`navbar-item ${scrolled ? "scrolled" : ""}`}
           >
@@ -77,25 +66,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-//with the react-scroll package you can use {Link} from 'react-scroll'
-//Then you can use the Link component in your Navbar component and set
-//the to prop to the ID of the element you want to scroll to.
-
-{
-  /* <Link
-  className="navbar-item"
-  to="about-section"
-  spy={true}
-  smooth={true}
-  offset={-70}
-  duration={500}
-  >
-  About Me
-</Link> */
-}
-// You also need to add an id to the element you want to scroll to.
-
-// <section id="about-section">
-//    // content
-// </section>

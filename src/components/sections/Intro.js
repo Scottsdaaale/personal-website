@@ -3,8 +3,8 @@ import React from "react";
 function Intro() {
   return (
     <div className="big-heading">
-      <h1>Hello, my name is</h1>
-      <h2 className="heading-1">Scott Peterson.</h2>
+      <h2>Hello, my name is</h2>
+      <h1 className="heading-1">Scott Peterson.</h1>
       <h3 className="heading-2">I am a Software Engineer.</h3>
       <p>
         Ipsum nulla eu nisi Lorem. Duis ullamco excepteur elit ex dolore enim
