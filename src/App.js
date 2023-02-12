@@ -11,13 +11,10 @@ function App() {
   
   return (
     <div className="app">
-      <div className="bg-image">
-        {/* <img src="/background.jpg" alt="Background" /> */}
-      </div>
       <Router>
         <Navbar />
         <Socials />
-        <Main />
+        <Main className="main"/>
         <Side />
       </Router>
     </div>
