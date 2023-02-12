@@ -51,46 +51,45 @@ html {
   background-size: cover;
   filter: grayscale(100%); */
 }
-
+/* //////////////////////////////////////////////////////////////// Navbar //////////////////////////////////////////////////////////////// */
 .nav-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  /* padding: 20px; */
+  height: 60px;
   background-color: var(--main);
-  position: sticky;
-  top: 0;
+  position: fixed;
+  /* top: 0; */
   transition: all 0.2s ease-in-out;
   font-size: 13px;
-}
+  z-index: 10;
+  overflow: hidden;
+  }
 
-.nav-container.scrolled {
-  padding: 5px 20px;
-  background-color: #000000;
-  color: var(--main);
-}
 
-.navbar navbar-item.scrolled {
-  color: var(--main);
-}
 
-.navbar {
+.nav-links-container {
+  padding-right: 10%;
+}
+.navbar-links {
   display: flex;
 }
 
 .navbar-item {
   color: var(--black);
-  padding: 10px;
+  padding: 0px 20px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
-.navbar-item.scrolled{
+.navbar-item.scrolled {
   color: var(--main);
 }
 
 .nav-name {
-  padding-left: 20px;
+  padding-left: 10%;
 }
 
 .navbar a:hover {
@@ -99,38 +98,18 @@ html {
   color: var(--white);
 }
 
-@keyframes navbarAnimation {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.nav-container.scrolled {
+  height: 40px;
+
+  background-color: #000000;
+  color: var(--main);
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+.navbar navbar-item.scrolled {
+  color: var(--main);
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  /* border: 2px solid #fcee21; */
-  margin: 0px auto;
-  width: 100%;
-}
-
+/* ////////////////////////////////////////////////////////////////SOCAIL AND SIDE//////////////////////////////////////////////////////////////// */
 .socials-container {
   position: fixed;
   /* left: 0; This will center the socials container */
@@ -233,64 +212,136 @@ html {
   right: 50%;
   bottom: 0px;
 }
-
+/* //////////////////////////////////////////////////////////////// Main and children //////////////////////////////////////////////////////////////// */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: 2px solid #fcee21; */
+  margin: 0px auto;
+  width: 100%;
+}
 .about-me,
 .project-showcase,
-.resume,
-.intro {
+.resume {
   height: 500px;
-  width: 60%;
+  width: 50%;
   /* margin: 300px; */
-  margin-top: 3%;
-  margin-bottom: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   /* border: 2px solid var(--main); */
 }
-
+/* //////////////////////////////////////////////////////////////// Intro //////////////////////////////////////////////////////////////// */
 .intro {
   display: flex;
   flex-direction: row;
+  height: 500px;
+  width: 60%;
+  margin-top: 150px;
+  margin-bottom: 3%;
 }
 
-.intro-container{
-  width: 50%;
-}
-
-.big-heading{
+.big-heading {
   display: flex;
   flex-direction: column;
   text-align: left;
-  /* width: 100%; */
+  width: 100%;
 }
 
-.intro-container h1, p {
+.big-heading h1,
+p {
   color: var(--white);
   font-size: 10px;
 }
-.intro-container p {
-  width: 70%;
+.big-heading p {
+  width: 50%;
+}
+.big-heading a {
+  padding: 10px;
+  width: 33.8%;
+  text-decoration: none;
 }
 
-.heading-1{
+.heading-1 {
   color: var(--main);
   font-size: 40px;
   margin: 0;
   width: 100%;
 }
 
-.heading-2{
+.heading-2 {
   color: var(--dark-yellow);
   font-size: 40px;
   margin: 0;
 }
 
-.about-me {
-  display: flex;
-  flex-direction: row;
+.download-button {
+  background-color: var(--primary-color);
   color: var(--white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-color: var(--main);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.download-button:hover {
+  transform: scale(1.09);
+}
+
+/* .intro-graphic{
+
+} */
+/* //////////////////////////////////////////////////////////////// About me //////////////////////////////////////////////////////////////// */
+.about-me {
+  /* display: flex;
+  flex-direction: row; */
+  color: var(--white);
+  width: 100%;
+}
+
+.about-me-container {
+  display: grid;
+  grid-template-columns: 2123fr 1fr; /* Two equal-width columns */
+  gap: 50px; /* Adds a 20px gap between the columns */
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.about-me-container p {
+  margin: 0px;
+  padding-bottom: 10px;
+  width: 80%;
+  text-align: left;
+}
+
+.about-me-p-container{
+  width: 400px;
+}
+
+.about-me-container img {
+  width: 300px;
+  height: 320px;
+  transition: all 0.2s ease-in-out;
+  filter: grayscale(100%);
+  border-radius: 5px;
+}
+
+.about-me-container img:hover {
+  filter: grayscale(0%);
+  /* border-color: var(--main); */
 }
 
 .project-showcase {
+  color: var(--main);
 }
 
 .resume {
+  color: var(--main);
+
 }
