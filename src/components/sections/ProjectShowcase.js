@@ -3,7 +3,7 @@ import React from 'react'
 function ProjectShowcase() {
   return (
     <div>
-      projects
+      projects woooo
     </div>
   )
 }
