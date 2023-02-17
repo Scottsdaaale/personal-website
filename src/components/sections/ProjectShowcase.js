@@ -2,23 +2,22 @@ import React from "react";
 
 function ProjectShowcase() {
   return (
-    <div>
-      
-      <div>
-        <div></div>
-        <div></div>
+    <div className="project-container">
+      <div className="project">
+        <div className="project-img"></div>
+        <div className="project-desc"></div>
       </div>
-      <div>
-        <div></div>
-        <div></div>
+      <div className="project">
+        <div className="project-img"></div>
+        <div className="project-desc"></div>
       </div>
-      <div>
-        <div></div>
-        <div></div>
+      <div className="project">
+        <div className="project-img"></div>
+        <div className="project-desc"></div>
       </div>
     </div>
   );
 }
 
 export default ProjectShowcase;
-//use map to create these cards for displaying github projects.
+
