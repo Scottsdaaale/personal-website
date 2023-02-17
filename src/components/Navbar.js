@@ -39,7 +39,7 @@ function Navbar() {
               to="about"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-150}
               duration={500}
               // className={`navbar-item ${scrolled ? "scrolled" : ""}`}
             >
@@ -52,7 +52,7 @@ function Navbar() {
               to="projects"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-150}
               duration={500}
               // className={`navbar-item ${scrolled ? "scrolled" : ""}`}
             >
@@ -65,7 +65,7 @@ function Navbar() {
               to="resume"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-150}
               duration={500}
               // className={`navbar-item ${scrolled ? "scrolled" : ""}`}
             >
