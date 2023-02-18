@@ -6,6 +6,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   height: 100%;
+  /* font-family: Consolas, 'Courier New', monospace; */
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -223,14 +224,9 @@ body {
 /* //////////////////////////////////////////////////////////////// Intro //////////////////////////////////////////////////////////////// */
 .intro {
   display: flex;
-  
+
   flex-direction: column;
   text-align: left;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* flex-direction: column; */
-  /* height: 45vh; */
-  /* width: auto; */
   padding-top: 15%;
   padding-bottom: 15%;
   margin-left: 15%;
@@ -250,7 +246,7 @@ body {
 .big-heading p {
   width: 50%;
   color: var(--white);
-  font-size: 18px;
+  font-size: 1em;
 }
 /* .big-heading a {
   padding: 2px;
@@ -303,86 +299,77 @@ body {
 .about-me-container {
   display: flex;
   gap: 80px;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* width: 50%; */
-  margin: 0 auto;
 }
+
+.about-me-container img {
+  width: 50%;
+  height: 50%;
+  /* height: 10%; */
+  transition: all 0.2s ease-in-out;
+  filter: grayscale(100%);
+  border-radius: 5px;
+  box-shadow: 10px 10px 1px var(--main);
+}
+
+.about-me-container img:hover {
+  filter: grayscale(0%);
+}
+
 .about-me-container p {
   margin: 0px;
   padding-bottom: 20px;
   width: 100%;
   text-align: left;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 .about-me-p-container {
   width: 100%;
 }
 
-.about-me-container img {
-  width: 450px;
-  height: 480px;
-  transition: all 0.2s ease-in-out;
-  filter: grayscale(100%);
-  border-radius: 5px;
-  box-shadow: 10px 10px 1px var(--main) ;
-}
-
-.about-me-container img:hover {
-  filter: grayscale(0%);
-  
-}
-
 /* //////////////////////////////////////////////////////////////// Project Showcase //////////////////////////////////////////////////////////////// */
 
 .project-showcase {
   color: var(--main);
-  /* align-items: center; */
-
-  border: white solid;
   padding-top: 15%;
   padding-bottom: 15%;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 .project-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  border: white solid;
-  height: 100%;
-  width: 70vh;
+  /* border: white solid; */
+  /* height: 100%;
+  width: 70vh; */
 }
 
 .project {
-  /* display: flex; */
+  display: flex;
   border: white solid;
-  /* align-items: center; */
-
-  height: 100%;
-  width: 100%;
-  /* position: relative; */
+  align-items: center;
 }
 
-/* .project-img {
+.project-img {
   border: red solid;
   height: 100%;
-  width: 50%;
-} */
+  width: 100%;
+}
 
-/* .project-desc {
+.project-desc {
+  text-align: left;
   border: red solid;
-  height: 50%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
   z-index: 1;
- 
-  padding: 10px;
-  float: left;
-} */
-
+}
 /* //////////////////////////////////////////////////////////////// Resume //////////////////////////////////////////////////////////////// */
 .resume {
   color: var(--main);
+  padding-top: 15%;
+  padding-bottom: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
 }

@@ -3,9 +3,7 @@ import React from "react";
 function AboutMe() {
   return (
     <div className="about-me-container">
-      <div>
         <img src="./Headshot.jpg" alt="headshot"></img>
-      </div>
       <div className="about-me-p-container">
         <p>
           Sunt excepteur velit laboris tempor est magna. Laboris enim

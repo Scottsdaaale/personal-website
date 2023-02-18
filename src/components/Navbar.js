@@ -39,7 +39,7 @@ function Navbar() {
               to="about"
               spy={true}
               smooth={true}
-              offset={-150}
+              offset={50}
               duration={500}
               // className={`navbar-item ${scrolled ? "scrolled" : ""}`}
             >
