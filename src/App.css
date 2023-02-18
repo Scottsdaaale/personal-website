@@ -220,36 +220,32 @@ body {
   margin: 0px auto;
   width: 100%;
 }
-.about-me,
-/* .project-showcase, */
-.resume {
-  height: 700px;
-  width: 50%;
-  /* margin: 300px; */
-  padding-top: 3%;
-  padding-bottom: 3%;
-  /* border: 2px solid var(--main); */
-}
 /* //////////////////////////////////////////////////////////////// Intro //////////////////////////////////////////////////////////////// */
 .intro {
   display: flex;
-  flex-direction: row;
-  height: 700px;
-  width: 60%;
-  margin-top: 250px;
-  margin-bottom: 3%;
+  
+  flex-direction: column;
+  text-align: left;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+  /* height: 45vh; */
+  /* width: auto; */
+  padding-top: 15%;
+  padding-bottom: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
-.big-heading {
+/* .big-heading {
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: 100%;
-}
+} */
 
 .big-heading h2 {
   color: var(--white);
-  font-size: 18px;
+  font-size: 1em;
 }
 .big-heading p {
   width: 50%;
@@ -264,14 +260,14 @@ body {
 
 .heading-1 {
   color: var(--main);
-  font-size: 60px;
+  font-size: 4em;
   margin: 0;
   width: 100%;
 }
 
 .heading-2 {
   color: var(--dark-yellow);
-  font-size: 60px;
+  font-size: 4em;
   margin: 0;
 }
 
@@ -297,15 +293,19 @@ body {
 /* //////////////////////////////////////////////////////////////// About me //////////////////////////////////////////////////////////////// */
 .about-me {
   color: var(--white);
-  width: 100%;
+  /* width: auto; */
+  padding-top: 15%;
+  padding-bottom: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .about-me-container {
   display: flex;
   gap: 80px;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* width: 50%; */
   margin: 0 auto;
 }
 .about-me-container p {
@@ -326,25 +326,25 @@ body {
   transition: all 0.2s ease-in-out;
   filter: grayscale(100%);
   border-radius: 5px;
-  box-shadow: 10px 10px 1px var() ;
+  box-shadow: 10px 10px 1px var(--main) ;
 }
 
 .about-me-container img:hover {
   filter: grayscale(0%);
-  /* border-color: var(--main); */
+  
 }
 
 /* //////////////////////////////////////////////////////////////// Project Showcase //////////////////////////////////////////////////////////////// */
 
 .project-showcase {
   color: var(--main);
-  align-items: center;
+  /* align-items: center; */
 
   border: white solid;
-  height: 1200px;
-  width: 50%;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 .project-container {
   display: flex;
@@ -353,37 +353,34 @@ body {
 
   border: white solid;
   height: 100%;
-  width: 100%;
+  width: 70vh;
 }
 
 .project {
-  display: flex;
+  /* display: flex; */
   border: white solid;
-  align-items: center;
+  /* align-items: center; */
 
   height: 100%;
   width: 100%;
-  position: relative;
+  /* position: relative; */
 }
 
-.project-img {
+/* .project-img {
   border: red solid;
   height: 100%;
   width: 50%;
-}
+} */
 
-.project-desc {
+/* .project-desc {
   border: red solid;
   height: 50%;
   width: 50%;
-  /* position: absolute; */
-  /* top: 100px;
-  left: 400px; */
   z-index: 1;
-  /* background-color: rgba(255, 255, 255, 0.8); */
+ 
   padding: 10px;
   float: left;
-}
+} */
 
 /* //////////////////////////////////////////////////////////////// Resume //////////////////////////////////////////////////////////////// */
 .resume {
