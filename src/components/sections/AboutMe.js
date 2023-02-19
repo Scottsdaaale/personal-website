@@ -30,6 +30,7 @@ function AboutMe() {
           occaecat ullamco adipisicing veniam.
         </p>
         <p>Here are some skills i have</p>
+        <p>super good at beer pong</p>
       </div>
     </div>
   );
