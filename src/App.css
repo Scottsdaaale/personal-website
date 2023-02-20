@@ -25,7 +25,7 @@ body {
 
 *::-webkit-scrollbar-thumb {
   background-color: var(--main);
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 :root {
@@ -224,7 +224,6 @@ body {
 /* //////////////////////////////////////////////////////////////// Intro //////////////////////////////////////////////////////////////// */
 .intro {
   display: flex;
-
   flex-direction: column;
   text-align: left;
   padding-top: 15%;
@@ -271,7 +270,7 @@ body {
   background-color: var(--primary-color);
   color: var(--white);
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 2px;
   border-color: var(--main);
   font-size: 18px;
   font-weight: bold;
@@ -307,7 +306,7 @@ body {
   /* height: 10%; */
   transition: all 0.2s ease-in-out;
   filter: grayscale(100%);
-  border-radius: 5px;
+  border-radius: 2px;
   box-shadow: 10px 10px 1px var(--main);
 }
 
@@ -325,13 +324,15 @@ body {
 
 .about-me-p-container {
   width: 100%;
+  background-color: #0b0b0b;
+  border-radius: 2px;
 }
 
 /* //////////////////////////////////////////////////////////////// Project Showcase //////////////////////////////////////////////////////////////// */
 
 .project-showcase {
   color: var(--main);
-  padding-top: 15%;
+  padding-top: 10%;
   padding-bottom: 15%;
   margin-left: 15%;
   margin-right: 15%;
@@ -343,21 +344,31 @@ body {
 
 .project {
   display: flex;
-  border: white solid;
+  /* border: white solid; */
   align-items: center;
+  margin-bottom: 3vh;
+  gap: 3vh;
+  
 }
 
-.project-img {
-  border: red solid;
-  height: 100%;
-  width: 100%;
+.project img{
+  max-width: 800px;
+  max-height: auto;
+  z-index: 0;
+  transition: all 0.2s ease-in-out;
+  
+}
+
+.project img:hover{
+  transform: scale(1.1);
 }
 
 .project-desc {
+  color: var(--white);
+  background-color: #0b0b0b;
   text-align: left;
-  border: red solid;
-  height: 100%;
-  width: 100%;
+  border-radius: 2px;
+  padding: 3%;
   z-index: 1;
 }
 /* //////////////////////////////////////////////////////////////// Resume //////////////////////////////////////////////////////////////// */

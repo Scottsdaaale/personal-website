@@ -4,28 +4,41 @@ function ProjectShowcase() {
   return (
     <div className="project-container">
       <div className="project">
-        <div className="project-img">img</div>
+      
+        {/* <div className="project-img"> */}
+          <img src="/MyClip.png"/>
+        {/* </div> */}
+        
+        
         <div className="project-desc">
-          Sint do velit laborum magna. Dolore consectetur laboris amet
-          reprehenderit ipsum aliqua non et excepteur dolor sint adipisicing
-          commodo. Voluptate Lorem velit deserunt non ullamco commodo
-          consectetur nisi sunt tempor.
+          <span style={{ color: "var(--main)" }}>MyClip </span>is a clip
+          uploading app where you can upload your gifyourgame.com clips. Each
+          clip has a comment section, star rating, and an average of the number
+          of stars rated by users.
         </div>
       </div>
+
       <div className="project">
-        <div className="project-img">img</div>
+        
+          {/* <div className="project-img"> */}
+            <img src="/hypertyper.png"/>
+          {/* </div> */}
+        
+
         <div className="project-desc">
-          Occaecat minim aliqua incididunt occaecat excepteur cillum qui
-          pariatur sunt sunt eiusmod nulla. Sint elit officia cillum ea.
-          Voluptate eiusmod nulla elit.
+          HyperTyper is a simple speed typing app made collaboratively during my
+          time at Flatiron School.
         </div>
       </div>
+
       <div className="project">
-        <div className="project-img">img</div>
+        <div className="project-img">
+          <img src></img>
+        </div>
         <div className="project-desc">
           Irure fugiat consectetur ea nulla sunt do duis reprehenderit laboris
           et velit cillum laboris. Occaecat laboris duis mollit ea enim
-          consectetur est irure irure. 
+          consectetur est irure irure.
         </div>
       </div>
     </div>
@@ -33,3 +46,14 @@ function ProjectShowcase() {
 }
 
 export default ProjectShowcase;
+
+
+<div className="project-container">
+  <div className="project">
+    <img>
+    </img>
+    <div className="project-desc">
+
+    </div>
+  </div>
+</div>
