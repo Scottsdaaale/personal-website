@@ -33,7 +33,7 @@ function ProjectShowcase() {
 
       <div className="project">
         <div className="project-img">
-          <img src></img>
+          <img src="/TextTranslator.png"></img>
         </div>
         <div className="project-desc">
           Irure fugiat consectetur ea nulla sunt do duis reprehenderit laboris
