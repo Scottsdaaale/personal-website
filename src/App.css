@@ -1,6 +1,6 @@
 body {
   /* background: url("../public/background.jpg"); */
-  background-color: black;
+  background-color: var(--dark-grey);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -31,6 +31,7 @@ body {
 :root {
   --main: #fcee21;
   --black: #000000;
+  --dark-grey: #0B0B0B;
   --grey: #2c2c2c;
   --light-grey: #a9a9a9;
   --light-green: #97d892;
@@ -103,7 +104,7 @@ body {
 
 .nav-container.scrolled {
   height: 70px;
-  background-color: #000000;
+  background-color: var(--dark-grey);
   color: var(--main);
 }
 
@@ -127,6 +128,7 @@ body {
   margin: 0;
   left: 0;
   padding: 0;
+  z-index: 3;
 }
 
 .socials li {
@@ -176,6 +178,8 @@ body {
   margin: 0;
   /* right: 0; */
   padding: 0;
+  z-index: 0;
+
 }
 
 .side li {
@@ -356,6 +360,8 @@ body {
   max-height: auto;
   z-index: 0;
   transition: all 0.2s ease-in-out;
+  /* box-shadow: 10px 10px 1px var(--main); */
+  
   
 }
 
@@ -365,7 +371,7 @@ body {
 
 .project-desc {
   color: var(--white);
-  background-color: #0b0b0b;
+  background-color: #000000;
   text-align: left;
   border-radius: 2px;
   padding: 3%;
